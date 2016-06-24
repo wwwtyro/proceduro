@@ -1,17 +1,17 @@
 {
   "name": "proceduro",
   "productName": "proceduro",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "electron-packager . --platform=darwin,win32,linux --arch=x64 --overwrite",
-    "zipmac": "zip proceduro-darwin-x64.zip proceduro-darwin-x64",
-    "zipwin": "zip proceduro-win-x64.zip proceduro-win32-x64",
+    "zipmac": "zip -qr proceduro-darwin-x64.zip proceduro-darwin-x64",
+    "zipwin": "zip -qr proceduro-win-x64.zip proceduro-win32-x64",
     "ziplin": "tar -czf proceduro-linux-x64.tar.gz proceduro-linux-x64",
     "zip": "npm run zipmac && npm run zipwin && npm run ziplin",
     "clean": "rm -rf proceduro-*-x64",
-    "dist": "npm run build && npm run zip && npm run clean",
+    "dist": "npm run build && npm run cleanzip && npm run zip && npm run clean",
     "cleanzip": "rm -rf proceduro*.zip proceduro*.gz"
   },
   "author": "",
