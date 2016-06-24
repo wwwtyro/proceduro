@@ -11,7 +11,7 @@
     "ziplin": "tar -czf proceduro-linux-x64.tar.gz proceduro-linux-x64",
     "zip": "npm run zipmac && npm run zipwin && npm run ziplin",
     "clean": "rm -rf proceduro-*-x64",
-    "dist": "npm run build && npm run cleanzip && npm run zip && npm run clean",
+    "dist": "npm run cleanzip && npm run build && npm run zip && npm run clean",
     "cleanzip": "rm -rf proceduro*.zip proceduro*.gz"
   },
   "author": "",
