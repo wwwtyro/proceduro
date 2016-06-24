@@ -1,0 +1,12 @@
+body {
+    /*background-image: url("../../static/img/bg.png");*/
+    margin: 0px;
+    background: #282C34;
+}
+
+#render-canvas {
+    position: fixed;
+    top: 16px;
+    /*box-shadow: 0px 0px 16px 4px black;*/
+    display: none;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "welcome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^7.0.5",
+    "jquery": "^2.2.4",
+    "underscore": "^1.8.3"
+  }
+}

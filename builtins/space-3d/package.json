@@ -1,0 +1,10 @@
+{
+  "name": "space-3d",
+  "version": "1.0.0",
+  "description": "Quickly generate procedural 3D space scenes in your browser with WebGL",
+  "main": "",
+  "dependencies": {
+    "gl-matrix": "^2.3.1",
+    "rng": "^0.2.2"
+  }
+}
