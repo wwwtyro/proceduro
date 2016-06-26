@@ -6,9 +6,11 @@ const {ipcMain} = require('electron');
 var BrowserWindow = electron.BrowserWindow;
 var builtins = require('./builtins');
 
-require('electron-reload')(__dirname, {
-  electron: '/usr/local/bin/electron'
-});
+if (process.env.PROCEDURO_RELOAD) {
+    require('electron-reload')(__dirname, {
+      electron: require('electron-prebuilt')
+    });
+}
 
 var win;
 

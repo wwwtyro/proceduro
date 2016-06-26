@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "electron .",
+    "start": "PROCEDURO_RELOAD=1 electron .",
     "build": "electron-packager . --platform=darwin,win32,linux --arch=x64 --overwrite",
     "zipmac": "zip -qr proceduro-darwin-x64.zip proceduro-darwin-x64",
     "zipwin": "zip -qr proceduro-win-x64.zip proceduro-win32-x64",
@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "electron-packager": "^7.1.0",
-    "electron-prebuilt": "^1.2.5"
+    "electron-prebuilt": "^1.2.5",
+    "electron-reload": "^1.0.0"
   }
 }
