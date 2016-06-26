@@ -27,10 +27,10 @@ function defaultMenu() {
     submenu.push.apply(submenu, [
         { type: 'separator' },
         {
-            label: 'Welcome',
+            label: 'Home',
             click() {
                 resetMenu()
-                win.loadURL(`file://${__dirname}/welcome/index.html`);
+                win.loadURL(`file://${__dirname}/home/index.html`);
             }
         }, 
         {
@@ -143,7 +143,7 @@ function createWindow() {
             preload: preloadPath
         }
     });
-    win.loadURL(`file://${__dirname}/welcome/index.html`);
+    win.loadURL(`file://${__dirname}/home/index.html`);
     win.on('closed', () => {
         win = null;
     });
