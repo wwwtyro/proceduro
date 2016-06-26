@@ -80,7 +80,7 @@ const main = function() {
     var renderCanvas = document.getElementById("render-canvas");
     renderCanvas.width = renderCanvas.clientWidth;
     renderCanvas.height = renderCanvas.clientHeight;
-
+    
     var skybox = new Skybox(renderCanvas);
     var space = new Space3D(resolution);
 

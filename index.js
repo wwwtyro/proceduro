@@ -94,7 +94,7 @@ ipcMain.on('append menu', function(e, data) {
         const p = path[i];
         if (i === path.length - 1) {
             if (submenuGetItem(currentItem, p) !== null) {
-                consoleError(`menu item ${p} already exists.`);
+                consoleError(`menu item "${p}" already exists.`);
                 return;
             }
             currentItem.push({
