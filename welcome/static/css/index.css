@@ -1,13 +1,23 @@
 body {
-    /*background: #282C34;*/
-    /*3zfl4mri21q8*/
-    padding-top: 64px;
+    background: #282C34;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-    padding-bottom: 64px;
+    padding: 0px;
+    margin: 0px;
 }
 
-.top32 {
-    margin-top: 32px;
+.panel {
+    background-size: cover;
+    cursor: pointer;
 }
+
+.text {
+    color: white;
+    font-family: sans;
+    padding: 32px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0) 100%);    
+}
+

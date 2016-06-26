@@ -2,28 +2,36 @@
 
 var path = require('path');
 
-window.onload = function() {
-    var container = document.getElementById('container');
-    var index = 0;
+function render() {
+    var body = document.body;
+    body.innerHTML = "";
+    var count = Object.keys(proceduro.builtins).length;
+    var width = '100%';
+    var height = Math.max(window.innerHeight/count, 256);
     for (var key in proceduro.builtins) {
         let metadata = proceduro.builtins[key];
         var screenshot = path.join(metadata.path, 'metadata', metadata.screenshot);
-        if (index % 2 === 0) {
-            container.innerHTML += `<div class='row top32'>`;
-        }
-        container.innerHTML += `
-            <div class='col-md-3'>
-                <img src="${screenshot}" class="img-responsive" alt="${metadata.title}" onclick='proceduro.setApp("${key}")'>
-            </div>
-            <div class='col-md-3'>
-                <h2>${metadata.title}</h2>
-                <p>${metadata.description}</p>
+        var style = `
+            background-image: url("${screenshot}");
+            width: ${width};
+            height: ${height}px;
+        `;
+        body.innerHTML += `
+            <div class='panel' style='${style}' onclick='proceduro.setApp("${key}")'>
+                <div class='text'>
+                    <h1>${metadata.title}</h1>
+                    <p>${metadata.description}</p>
+                </div>
             </div>
         `;
-        if (index % 2 === 0) {
-            container.innerHTML += `</div>`;
-        }
-        index++;
     }
+    
 }
 
+window.addEventListener('resize', function() {
+    render();
+});
+
+window.onload = function() {
+    render();
+}
