@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron-canvas-to-buffer": "^2.0.0",
     "gl-matrix": "^2.3.2",
     "rng": "^0.2.2"
   }

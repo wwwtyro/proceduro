@@ -8,10 +8,5 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "freewall": "^1.0.8",
-    "glob": "^7.0.5",
-    "jquery": "^2.2.4",
-    "underscore": "^1.8.3"
-  }
+  "dependencies": {}
 }
