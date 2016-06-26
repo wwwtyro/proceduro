@@ -39,6 +39,12 @@ function defaultMenu() {
             click: function() {
                 win.webContents.toggleDevTools();
             }
+        },
+        {
+            label: 'Exit',
+            click: function() {
+                app.quit();
+            }
         }
     ]);
     return [{

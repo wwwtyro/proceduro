@@ -7,7 +7,7 @@ var Skybox = require("./src/skybox.js");
 var resolution = 1024;
 
 window.onload = function() {
-    setTimeout(main, 0);
+    setTimeout(main, 100);
 }
 
 const main = function() {
