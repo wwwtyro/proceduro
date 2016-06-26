@@ -8,7 +8,6 @@ var builtins = path.resolve(path.join(__dirname, 'builtins'));
 
 fs.readdirSync(builtins).forEach(function(bi) {
     var biPath = path.join(builtins, bi);
-    console.log(biPath);
     if (!fs.existsSync(path.join(biPath, 'package.json'))) {
         return;
     }

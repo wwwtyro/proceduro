@@ -13,7 +13,8 @@
     "zip": "npm run zipmac && npm run zipwin && npm run ziplin",
     "clean": "rm -rf proceduro-*-x64",
     "dist": "npm run cleanzip && npm run build && npm run zip && npm run clean",
-    "cleanzip": "rm -rf proceduro*.zip proceduro*.gz"
+    "cleanzip": "rm -rf proceduro*.zip proceduro*.gz",
+    "install-builtins": "node npm-install-builtins.js"
   },
   "author": "",
   "license": "ISC",
