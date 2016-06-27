@@ -3,10 +3,26 @@
 Proceduro is a collection of procedural generation tools packaged into a desktop
 application.
 
-Currently includes:
+## Download for Linux, Mac, and Windows
 
- * Space2D - generate 2D space vistas of arbitrary dimension
- * Space Skybox - generate skyboxes of space
- 
- Please see releases on this project's github repo to download the application
- for your platform.
+[Get the latest release here.](https://github.com/wwwtyro/proceduro/releases)
+
+## Running from source
+
+```bash
+$ git clone git@github.com:wwwtyro/proceduro.git
+$ cd proceduro
+$ npm install
+$ npm run install-builtins
+$ npm start
+```
+
+## Tools
+
+### space skybox
+
+Generate skyboxes of space vistas.
+
+### space 2d
+
+Generate 2D space scenes.
