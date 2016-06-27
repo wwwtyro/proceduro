@@ -23,11 +23,11 @@ $ npm start
 
 Generate skyboxes of space vistas.
 
-![space skyboxes](http://i.imgur.com/sAFiPlp.png)
+![space skyboxes](http://i.imgur.com/LxE4eTL.png)
 
 ### space 2d
 
 Generate 2D space scenes.
 
-![2D space scenes](http://i.imgur.com/LxE4eTL.png)
+![2D space scenes](http://i.imgur.com/sAFiPlp.png)
 
